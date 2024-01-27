@@ -44,22 +44,22 @@ export const publicBottomNavigationLinks = [
   {
     label: "Home",
     route: "/",
-    icon: <Home width={28} height={28} />,
+    icon: <Home width={24} height={24} />,
   },
   {
     label: "Favourite",
     route: "/favourite",
-    icon: <Heart width={28} height={28} />,
+    icon: <Heart width={24} height={24} />,
   },
   {
     label: "My Orders",
     route: "/my-orders",
-    icon: <ShoppingBag width={28} height={28} />,
+    icon: <ShoppingBag width={24} height={24} />,
   },
   {
     label: "My Profile",
     route: "/profile",
-    icon: <UserRound width={28} height={28} />,
+    icon: <UserRound width={24} height={24} />,
   },
 ];
 
@@ -67,16 +67,16 @@ export const businessBottomNavigationLinks = [
   {
     label: "Home",
     route: "/",
-    icon: <Home width={28} height={28} />,
+    icon: <Home width={24} height={24} />,
   },
   {
     label: "My Business",
     route: "/business/dashboard",
-    icon: <Calendar width={28} height={28} />,
+    icon: <Calendar width={24} height={24} />,
   },
   {
     label: "My Profile",
     route: "/business/profile",
-    icon: <UserRound width={28} height={28} />,
+    icon: <UserRound width={24} height={24} />,
   },
 ];

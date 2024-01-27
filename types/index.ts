@@ -18,11 +18,14 @@ export type SearchParamProps = {
 // ====== USER PARAMS
 export type CreateUserParams = {
   clerkId: string;
+  uid: string;
   firstName: string;
   lastName: string;
   username: string;
   email: string;
-  photo: string;
+  imageUrl: string;
+  createdAt: number;
+  onboarded?: boolean;
 };
 
 export type UpdateUserParams = {

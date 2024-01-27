@@ -77,3 +77,8 @@ body {
   font-family: var(--font-poppins)
 }
 
+/* Shadcn Component Styles */
+
+.no-focus {
+  @apply focus:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+}
