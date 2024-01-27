@@ -9,14 +9,17 @@ export const connectToDatabase = async () => {
 
   if (!MONGODB_URI) throw new Error("MONGODB_URI is missing");
 
+  console.log("---", cached, cached?.conn);
   cached.promise =
     cached.promise ||
     mongoose.connect(MONGODB_URI, {
-      dbName: "apakhabar",
+      dbName: "pergimana",
       bufferCommands: false,
     });
 
   cached.conn = await cached.promise;
+
+  console.log("here--->>>", cached?.conn);
 
   return cached.conn;
 };

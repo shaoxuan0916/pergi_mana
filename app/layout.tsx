@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ApaKhabar",
-  description: "ApaKhabar is a platform for finding good food and vouchers.",
+  title: "Pergi Mana",
+  description: "PergiMana is a platform for finding good food and vouchers.",
   icons: {
     icon: "/next.svg",
   },
