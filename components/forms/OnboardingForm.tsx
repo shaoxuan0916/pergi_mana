@@ -17,7 +17,7 @@ import * as z from "zod";
 import { useState } from "react";
 import { createUser } from "@/lib/actions/user.actions";
 import { useRouter } from "next/navigation";
-import Spinner from "../ui/Spinner";
+import Spinner from "../ui/spinner";
 import toast from "react-hot-toast";
 
 interface OnboardingFormProps {

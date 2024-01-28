@@ -1,4 +1,6 @@
 import OnboardingForm from "@/components/forms/OnboardingForm";
+import { isUserExists } from "@/lib/actions/user.actions";
+import { connectToDatabase } from "@/lib/database";
 import User from "@/lib/database/models/user.model";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
@@ -7,7 +9,8 @@ async function Page() {
   const user = await currentUser();
   if (!user) return null; // to avoid typescript warnings
 
-  const isUserOnboarded = await User.exists({ clerkId: user.id });
+  // If user exists in DB, means already onboarded
+  const isUserOnboarded = await isUserExists(user.id);
 
   if (isUserOnboarded) redirect("/");
 

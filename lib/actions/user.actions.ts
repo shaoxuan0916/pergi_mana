@@ -8,6 +8,18 @@ import { handleError } from "@/lib/utils";
 
 import { CreateUserParams, UpdateUserParams } from "@/types";
 
+// Check is user already exists in DB
+export async function isUserExists(userId: string) {
+  try {
+    await connectToDatabase();
+
+    const isUserExists = await User.exists({ clerkId: userId });
+    return JSON.parse(JSON.stringify(isUserExists));
+  } catch (error) {
+    handleError(error);
+  }
+}
+
 // Create user
 export async function createUser(user: CreateUserParams) {
   try {
