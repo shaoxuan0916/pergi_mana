@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
-function Spinner({
+export default function Spinner({
   className,
   ...props
 }: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
@@ -31,5 +31,3 @@ function Spinner({
     </svg>
   );
 }
-
-export { Spinner };
