@@ -8,9 +8,15 @@ import HeaderNavItems from "./HeaderNavItems";
 const Header = ({ isBusiness }: { isBusiness?: boolean }) => {
   return (
     <header className="w-full">
-      <div className="w-full flex items-center justify-between p-4 md:p-8 max-w-[1440px] mx-auto">
-        <Link href="/" className="w-36">
-          <Image src="/next.svg" width={128} height={38} alt="PergiMana logo" />
+      <div className="w-full flex items-center justify-between pr-4 md:px-8 max-w-[1440px] mx-auto">
+        <Link href={isBusiness ? "/business" : "/"}>
+          <Image
+            src="/assets/images/pergi-mana-logo.png"
+            width={96}
+            height={96}
+            alt="PergiMana logo"
+            className="w-24 h-24"
+          />
         </Link>
 
         <nav className="md:flex hidden w-full max-w-xs">

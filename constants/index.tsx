@@ -1,6 +1,13 @@
 "use client";
 
-import { Calendar, Heart, Home, ShoppingBag, UserRound } from "lucide-react";
+import {
+  Calendar,
+  Heart,
+  Home,
+  ShoppingBag,
+  TicketIcon,
+  UserRound,
+} from "lucide-react";
 
 // ========== Routes
 
@@ -27,14 +34,18 @@ export const publicHeaderLinks = [
 export const businessHeaderLinks = [
   {
     label: "Home",
-    route: "/",
+    route: "/business",
   },
   {
-    label: "My Business",
+    label: "Dashboard",
     route: "/business/dashboard",
   },
   {
-    label: "My Profile",
+    label: "Offers",
+    route: "/business/offers",
+  },
+  {
+    label: "Business Profile",
     route: "/business/profile",
   },
 ];
@@ -57,7 +68,7 @@ export const publicBottomNavigationLinks = [
     icon: <ShoppingBag width={24} height={24} />,
   },
   {
-    label: "My Profile",
+    label: "Profile",
     route: "/profile",
     icon: <UserRound width={24} height={24} />,
   },
@@ -66,16 +77,21 @@ export const publicBottomNavigationLinks = [
 export const businessBottomNavigationLinks = [
   {
     label: "Home",
-    route: "/",
+    route: "/business",
     icon: <Home width={24} height={24} />,
   },
   {
-    label: "My Business",
+    label: "Dashboard",
     route: "/business/dashboard",
     icon: <Calendar width={24} height={24} />,
   },
   {
-    label: "My Profile",
+    label: "Offers",
+    route: "/business/offers",
+    icon: <TicketIcon width={24} height={24} />,
+  },
+  {
+    label: "Profile",
     route: "/business/profile",
     icon: <UserRound width={24} height={24} />,
   },

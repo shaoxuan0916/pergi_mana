@@ -16,8 +16,8 @@ const BottomNavigation = ({ isBusiness }: { isBusiness?: boolean }) => {
     : publicBottomNavigationLinks;
 
   return (
-    <div className="p-4 h-[90px] fixed bottom-0 left-0 right-0 bg-white shadow-xl shadow-black/90 md:hidden">
-      <div className="grid grid-cols-4 mx-auto w-full bg-white">
+    <div className="p-4 h-[80px] fixed bottom-0 left-0 right-0 bg-white shadow-xl shadow-black/90 md:hidden">
+      <div className="grid grid-cols-4 items-center mx-auto w-full bg-white">
         {links.map((link) => {
           const isActive = pathname === link.route;
           return (

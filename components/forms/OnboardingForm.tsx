@@ -37,6 +37,8 @@ interface OnboardingFormProps {
 const OnboardingForm = ({ userData }: OnboardingFormProps) => {
   const [loading, setLoading] = useState<boolean>(false);
 
+  const [accountType, setAccountType] = useState<"business" | "user">("user");
+
   const router = useRouter();
 
   const form = useForm({

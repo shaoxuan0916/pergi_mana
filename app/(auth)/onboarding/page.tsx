@@ -1,7 +1,6 @@
 import OnboardingForm from "@/components/forms/OnboardingForm";
+import { isBusinessExists } from "@/lib/actions/business.actions";
 import { isUserExists } from "@/lib/actions/user.actions";
-import { connectToDatabase } from "@/lib/database";
-import User from "@/lib/database/models/user.model";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
@@ -11,8 +10,9 @@ async function Page() {
 
   // If user exists in DB, means already onboarded
   const isUserOnboarded = await isUserExists(user.id);
+  const isBusinessOnboarded = await isBusinessExists(user.id);
 
-  if (isUserOnboarded) redirect("/");
+  if (isUserOnboarded || isBusinessOnboarded) redirect("/");
 
   const userData = {
     clerkId: user?.id,
