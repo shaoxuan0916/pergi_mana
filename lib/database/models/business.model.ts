@@ -1,4 +1,4 @@
-import { BusinessCategory } from "@/types";
+import { BusinessCategory, State } from "@/types";
 import { Schema, model, models } from "mongoose";
 
 const BusinessSchema = new Schema({
@@ -7,12 +7,17 @@ const BusinessSchema = new Schema({
   email: { type: String, required: true, unique: true },
   businessName: { type: String, required: true },
   address: { type: String, required: true },
+  state: {
+    type: String,
+    required: true,
+    enum: Object.values(State), // Use the enum property with the values from State
+  },
   category: {
     type: String,
     required: true,
     enum: Object.values(BusinessCategory), // Use the enum property with the values from BusinessCategory
   },
-  phoneNumber: { type: String, required: true },
+  contactNumber: { type: String, required: true },
   createdAt: { type: String, required: true },
   imageUrl: { type: String, required: true },
   onboarded: {

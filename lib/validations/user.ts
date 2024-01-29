@@ -1,7 +1,7 @@
 import * as z from "zod";
 
 // Validate form
-export const UserValidation = z.object({
+export const UserOnboardingFormValidation = z.object({
   firstName: z
     .string()
     .min(1, { message: "First name cannot be empty" })

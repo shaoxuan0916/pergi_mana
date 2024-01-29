@@ -96,3 +96,103 @@ export const businessBottomNavigationLinks = [
     icon: <UserRound width={24} height={24} />,
   },
 ];
+
+//  Country & States
+export const country = [
+  {
+    countryName: "Malaysia",
+    countryShortCode: "MY",
+    regions: [
+      {
+        name: "Johor",
+        shortCode: "01",
+      },
+      {
+        name: "Kedah",
+        shortCode: "02",
+      },
+      {
+        name: "Kelantan",
+        shortCode: "03",
+      },
+      {
+        name: "Melaka",
+        shortCode: "04",
+      },
+      {
+        name: "Negeri Sembilan",
+        shortCode: "05",
+      },
+      {
+        name: "Pahang",
+        shortCode: "06",
+      },
+      {
+        name: "Perak",
+        shortCode: "08",
+      },
+      {
+        name: "Perlis",
+        shortCode: "09",
+      },
+      {
+        name: "Pulau Pinang",
+        shortCode: "07",
+      },
+      {
+        name: "Sabah",
+        shortCode: "12",
+      },
+      {
+        name: "Sarawak",
+        shortCode: "13",
+      },
+      {
+        name: "Selangor",
+        shortCode: "10",
+      },
+      {
+        name: "Terengganu",
+        shortCode: "11",
+      },
+      {
+        name: "Kuala Lumpur",
+        shortCode: "14",
+      },
+      {
+        name: "Labuan",
+        shortCode: "15",
+      },
+      {
+        name: "Putrajaya",
+        shortCode: "16",
+      },
+    ],
+  },
+  {
+    countryName: "Singapore",
+    countryShortCode: "SG",
+    regions: [
+      {
+        name: "Central Singapore",
+        shortCode: "01",
+      },
+      {
+        name: "North East",
+        shortCode: "02",
+      },
+      {
+        name: "North West",
+        shortCode: "03",
+      },
+      {
+        name: "South East",
+        shortCode: "04",
+      },
+      {
+        name: "South West",
+        shortCode: "05",
+      },
+    ],
+  },
+];

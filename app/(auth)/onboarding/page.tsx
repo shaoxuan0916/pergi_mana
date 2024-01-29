@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 
 async function Page() {
   const user = await currentUser();
-  if (!user) return null; // to avoid typescript warnings
+  if (!user) return redirect("/sign-in"); // to avoid typescript warnings
 
   // If user exists in DB, means already onboarded
   const isUserOnboarded = await isUserExists(user.id);
@@ -27,7 +27,9 @@ async function Page() {
 
   return (
     <main className="px-4 py-8">
-      <h1 className="text-[24px] font-semibold">Onboarding</h1>
+      <h1 className="text-[24px] font-semibold mb-4">
+        Welcome <span className="text-[24px]">{user?.lastName}</span> ,
+      </h1>
 
       <p className="mt-3 text-[16px] font-medium">
         Complete your profile to use{" "}
