@@ -20,7 +20,7 @@ export async function isBusinessExists(businessId: string) {
   }
 }
 
-// Create user
+// Create business
 export async function createBusiness(business: CreateBusinessParams) {
   try {
     await connectToDatabase();
@@ -32,7 +32,7 @@ export async function createBusiness(business: CreateBusinessParams) {
   }
 }
 
-// Get user by uid
+// Get business by uid
 export async function getBusinessById(businessId: string) {
   try {
     await connectToDatabase();

@@ -25,6 +25,7 @@ export type CreateUserParams = {
   email: string;
   imageUrl: string;
   createdAt: number;
+  updatedAt: number;
   onboarded?: boolean;
 };
 
@@ -47,6 +48,7 @@ export type CreateBusinessParams = {
   contactNumber: string;
   imageUrl: string;
   createdAt: number;
+  updatedAt: number;
   onboarded?: boolean;
 };
 

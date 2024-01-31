@@ -19,6 +19,7 @@ const BusinessSchema = new Schema({
   },
   contactNumber: { type: String, required: true },
   createdAt: { type: String, required: true },
+  updatedAt: { type: String, required: true },
   imageUrl: { type: String, required: true },
   onboarded: {
     type: Boolean,

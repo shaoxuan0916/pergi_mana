@@ -8,6 +8,8 @@ const UserSchema = new Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   imageUrl: { type: String, required: true },
+  createdAt: { type: String, required: true },
+  updatedAt: { type: String, required: true },
   onboarded: {
     type: Boolean,
     default: false,
